@@ -1,6 +1,8 @@
+import CustomButton from "@/components/CustomButton";
 import InputField from "@/components/InputField";
+import OAuth from "@/components/OAuth";
 import { icons, images } from "@/constants";
-import { router } from "expo-router";
+import { Link, router } from "expo-router";
 import { useState } from "react";
 import {
   Image,
@@ -19,8 +21,12 @@ const SignUp = () => {
     email: "",
     password: "",
   });
+
+  const onSignUpPress = () => {};
+
   return (
     <KeyboardAvoidingView
+      style={{ flex: 1 }}
       behavior={Platform.OS === "ios" ? "padding" : "height"}
     >
       <ScrollView className="flex-1 bg-white">
@@ -63,6 +69,21 @@ const SignUp = () => {
                 setForm({ ...form, password: value });
               }}
             />
+            <CustomButton
+              title="Sign Up"
+              onPress={onSignUpPress}
+              className="mt-6"
+            />
+
+            <OAuth />
+
+            <Link
+              href="/sign-in"
+              className="text-lg text-center text-general-200 mt-10"
+            >
+              <Text> Already have an account? </Text>
+              <Text className="text-primary-500"> Log in </Text>
+            </Link>
           </View>
         </View>
       </ScrollView>
