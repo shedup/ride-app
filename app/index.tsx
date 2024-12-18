@@ -1,5 +1,6 @@
-import { Redirect, Stack } from "expo-router";
+import { Redirect, SplashScreen, Stack } from "expo-router";
 import { useAuth } from "@clerk/clerk-expo";
+import { useEffect } from "react";
 
 const Home = () => {
   const { isSignedIn } = useAuth();
