@@ -11,17 +11,17 @@ const TabIcon = ({
   focused: boolean;
 }) => (
   <View
-    className={`flex flex-row pb-9 w-12 h-12 justifiy-center items-center rounded-full }`}
+    className={`flex flex-row pb-8 w-20 h-20 justify-center items-center rounded-full }`}
   >
     <View
-      className={`rounded-full w-12 h-12 items-center justify-center 
+      className={`rounded-full w-20 h-20 items-center justify-center 
       ${focused ? "bg-general-400" : ""}`}
     >
       <Image
         source={source}
         tintColor="white"
         resizeMode="contain"
-        className="w-7 h-7"
+        className="w-12 h-12"
       />
     </View>
   </View>
@@ -40,8 +40,8 @@ const Layout = () => {
           paddingBottom: 0, // ios only
           overflow: "hidden",
           marginHorizontal: 20,
-          marginBottom: 20,
-          height: 78,
+          marginBottom: 25,
+          height: 90,
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
