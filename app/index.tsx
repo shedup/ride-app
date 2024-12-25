@@ -1,6 +1,7 @@
 import { Redirect, SplashScreen, Stack } from "expo-router";
 import { useAuth } from "@clerk/clerk-expo";
 import { useEffect } from "react";
+import "react-native-get-random-values";
 
 const Home = () => {
   const { isSignedIn } = useAuth();
