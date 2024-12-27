@@ -1,3 +1,4 @@
+// Navigation structure which are nested.
 import { SplashScreen, Stack } from "expo-router";
 
 import "../global.css";

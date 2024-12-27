@@ -1,3 +1,4 @@
+// Root route for teh whole application.
 import { Redirect, SplashScreen, Stack } from "expo-router";
 import { useAuth } from "@clerk/clerk-expo";
 import { useEffect } from "react";
