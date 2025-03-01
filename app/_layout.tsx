@@ -6,7 +6,6 @@ import { useFonts } from "expo-font";
 import { useEffect } from "react";
 
 import { ClerkProvider, ClerkLoaded } from "@clerk/clerk-expo";
-import { Slot } from "expo-router";
 import { tokenCache } from "@/cache";
 
 export default function RootLayout() {
